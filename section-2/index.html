@@ -17,8 +17,11 @@
       <h1>Vue Course Goals</h1>
     </header>
     <section id="user-goal">
+      <input type="text" v-model="name">
       <h2>My Course Goal</h2>
-      <p>{{courseGoal}}</p>
+      <p>{{outputGoal()}}</p>
+      <p>Fullname: {{fullName}}</p>
+      <p>Learn more about <a :href="vueLink">Athlos</a></p>
     </section>
   </body>
 </html>
